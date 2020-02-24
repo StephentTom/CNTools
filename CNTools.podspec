@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CNTools'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CNTools.'
+  s.summary          = 'CNMTools iOS常用类库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+iOS常用 分类 | 宏 | 倒计时等类库
                        DESC
 
   s.homepage         = 'https://github.com/StephentTom/CNTools'
@@ -30,12 +30,28 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CNTools/Classes/**/*'
+  # s.source_files = 'CNTools/Classes/**/*'
+  
+  s.subspec "cncategory" do |cncategory|
+      cncategory.source_files = 'CNTools/Classes/cncategory/*.{h,m}'
+  end
+  
+  s.subspec "cnnetWorkingStatus" do |cnnetWorkingStatus|
+      cnnetWorkingStatus.source_files = 'CNTools/Classes/cnnetWorkingStatus/*.{h,m}'
+  end
+  
+  s.subspec "cnutils" do |cnutils|
+      cnutils.source_files = 'CNTools/Classes/cnutils/*.{h,m}'
+  end
+  
+  s.subspec "cnmacroes" do |cnmacroes|
+      cnmacroes.source_files = 'CNTools/Classes/cnmacroes/*.h'
+  end
   
   # s.resource_bundles = {
   #   'CNTools' => ['CNTools/Assets/*.png']
   # }
-
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

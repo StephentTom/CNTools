@@ -1,0 +1,24 @@
+PODS:
+  - CNTools (0.1.0):
+    - CNTools/cncategory (= 0.1.0)
+    - CNTools/cnmacroes (= 0.1.0)
+    - CNTools/cnnetWorkingStatus (= 0.1.0)
+    - CNTools/cnutils (= 0.1.0)
+  - CNTools/cncategory (0.1.0)
+  - CNTools/cnmacroes (0.1.0)
+  - CNTools/cnnetWorkingStatus (0.1.0)
+  - CNTools/cnutils (0.1.0)
+
+DEPENDENCIES:
+  - CNTools (from `../`)
+
+EXTERNAL SOURCES:
+  CNTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CNTools: 83f3861722793e156c7847851ed9c81c508120a9
+
+PODFILE CHECKSUM: ad7e782f7cb0271a67d28596ba58e71273304dd2
+
+COCOAPODS: 1.7.5
