@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CNTools_Example' do
+  pod 'CNTools', :path => '../'
+
+  target 'CNTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
